@@ -6,9 +6,9 @@
 </head>
 <body>
 	<p align="center">
-	<h2>회원 정보 입력</h2>
+		<b>회원 정보 입력</b>
 	</p>
-	<table border="1">
+	<table border="1" align="center">
 	 	<tr>
 	 		<td>아이디</td>
 	 		<td> <input type="text" name="id"> </td>
@@ -23,10 +23,9 @@
 		</tr>
 		<tr>
 			<td>전화번호</td>
-			<td><input type="text" name="tel1" value="02">
-			- <input name="tel2">
-			- <input name="tel3">
-			</td>
+			<td><input type="text" name="tel1" size="3" value="02">
+                    - <input name="tel2" size="4">
+                    - <input name="tel3" size="4"></td>
 		</tr>
 		<tr>
 			<td>직업</td>
@@ -37,7 +36,30 @@
                 <option> 무직 </option>
 			</select></td>
 		</tr>
-		
+		<tr>
+                <td> 성별 </td>
+                <td> <input type="radio" name="gender" value="male" checked>남자&nbsp;&nbsp;
+                     <input type="radio" name="gender" value="female">여자
+                </td>
+            </tr>
+            <tr>
+                <td> 취미 </td>
+                <td>
+                    <input type="checkbox" name="hobby" value="reading">독서&nbsp;&nbsp;
+                    <input type="checkbox" name="hobby" value="game">게임&nbsp;&nbsp;
+                    <input type="checkbox" name="hobby" value="movie">영화감상&nbsp;&nbsp;
+                    <input type="checkbox" name="hobby" value="music">음악감상&nbsp;&nbsp;
+                    <input type="checkbox" name="hobby" value="soccer">축구</td>
+            </tr>
+            <tr>
+                <td> 자기 소개하는 글 </td>
+                <td> <textarea rows="7" cols="60" name="intro"> 자기를 소개하는 글을 쓰세요 </textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="등록하기">&nbsp;&nbsp;
+                    <input type="reset" value="취소하기"></td>
+            </tr>
 	</table>
 </body>
 </html>
