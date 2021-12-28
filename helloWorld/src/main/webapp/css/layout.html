@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css/layout.html</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Hi+Melody&family=Nanum+Pen+Script&family=Single+Day&display=swap');
+        * {
+            font-size: 11px;
+            box-sizing: border-box;
+        }
+        header {
+            height: 37px;
+            background-color: wheat;
+            text-align: center;
+        }
+        nav {
+            background-color: rgb(198, 241, 128);
+            width: 25%;
+            height: 60vh;
+            /* height는 %대신 vh를 쓴다 */
+            float: left;
+        }
+        main {
+            background-color: rgb(133, 241, 241);
+            width: 50%;
+            height: 60vh;
+            float: left;
+            text-align: center;
+            
+        }
+        aside {
+            background-color: rgb(184, 122, 202);
+            width: 25%;
+            float: left;
+            height: 60vh;
+        }
+        footer {
+            clear: both;
+            height: 12vh;
+            background-color: rgb(204, 102, 102);
+            text-align: center;
+        }
+        header>ul{
+            border-top : 1px solid rgb(0, 0, 0);
+            border-bottom : 1px solid rgb(0, 0, 0);
+            padding: 1px 2px;
+            list-style-type: none;
+            
+        }
+
+        header li {
+            display: inline-block;
+            width: 20%;
+            margin: 3px 5px 15px;
+        }
+        .menu {
+            font-size: .9em;
+            padding-left: 15px;
+            padding-bottom: 20px;
+            margin-top: 30px;
+        }
+        .cg {
+            padding-bottom: 5px;
+            background-color: rgba(144, 238, 144, 0.89);
+            margin: 10px;
+            width: 80;
+        }
+        a{
+            text-decoration: none;
+        }
+        .dg {
+            list-style: none;
+            font-size: 40px;
+            font-style: italic;
+            
+        }
+        aside li{
+            color: rgb(168, 236, 191);
+            font-size: 20px;
+            margin-bottom: 60px;
+        }
+        .as {
+            padding: 7px;
+        }
+        .qw {
+            font-size: .7em;
+            color: rgb(168, 60, 60);
+            margin: 3px 5px;
+            width: 140px;
+            text-align: center;
+        }
+        button {
+            
+            background-color: rgb(96, 221, 117);
+            color: white;
+            margin-top: 10px;
+            margin-left: 80%;
+            border: 1px solid rgb(124, 187, 216);
+        }
+        main>table {
+            border-top: 3px double black;
+            width: 98%;
+            border-collapse: collapse;
+        }
+        th {
+            padding: 6px;
+        }
+        td {
+            border-top: 1px solid rgb(0, 0, 0);
+            padding: 4px;
+            
+        }
+        .nu {
+            text-align: center;
+            padding: 0px 0px 0px 0px;
+            width: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            
+            <li><span class="material-icons-outlined">
+                home
+                </span>Home</li>
+            <li><span class="material-icons-outlined">
+                view_list
+                </span>게시판</li>
+            <li><span class="material-icons-outlined">
+                help_outline
+                </span>FAQ</li>
+            <li><span class="material-icons-outlined">
+                login
+                </span>로그인</li>
+        </ul>
+    </header>
+    <nav>
+        <div class="menu">
+            <div class="cg"><a href="#"> 게시판 카테고리</a></div>
+            <div class="cg at"><a href="#">자유게시판</a></div>
+            <div class="cg"><a href="#">리뷰게시판</a></div>
+            <div class="cg"><a href="#">네이버 동영상 게시판</a></div>
+            <div class="cg"><a href="#">자료실 게시판</a></div>
+        </div>
+    </nav>
+    <main>
+        <table>
+            <caption>자유게시판</caption>
+            <thead>
+                <tr>
+                  <th class="nu">No</th>
+                  <th>제목</th>
+                  <th>글쓴이</th>
+                  <th>작성시간</th>
+                  <th>좋아요</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="as nu">4</td>
+                    <td class="as">텝 메뉴 이미지</td>
+                    <td class="qw">아임웹</td>
+                    <td class="qw">2017-12-06</td>
+                    <td class="qw">0</td>
+                </tr>
+                <tr>
+                    <td class="as nu">3</td>
+                    <td class="as">응원합니다!</td>
+                    <td class="qw">아임웹</td>
+                    <td class="qw">2017-11-20</td>
+                    <td class="qw">0</td>
+                </tr>
+                <tr>
+                    <td class="as nu">2</td>
+                    <td class="as">이번엔 가즈아아아!</td>
+                    <td class="qw">아임웹</td>
+                    <td class="qw">2017-11-20</td>
+                    <td class="qw">0</td>
+                </tr>
+                <tr>
+                    <td class="as nu">1</td>
+                    <td class="as">제목만 보여주기!</td>
+                    <td class="qw">아임웹</td>
+                    <td class="qw">2017-11-20</td>
+                    <td class="qw">0</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <button>글쓰기</button>
+    </main>
+    <aside>
+        <ul class="dg">디자인 모드
+            <li>빠른 시작 가이드</li>
+            <li>디자인 모드란?</li>
+            <li>아엠 페이지 구조</li>
+            <li>공통 디자인 등록</li>
+        </ul>
+    </aside>
+    <footer>
+        <p>상호명 : (주)아이웹 | 대표이사: 이수모</p>
+        <p>본사 : 서울특별시 서대문구 성산로7길 89-8</p>
+        <p>고객지원 : 문의 게시판 또는 실시간 채팅</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css/boxmodel.html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1, div, p, span {
+            border: 5px solid blue;
+            /* border-width: 1px;
+            border-style: solid;
+            border-color: blue; */
+            /* 저 세 문장을 하나로 합치면 윗 문장처럼 된다.*/
+        }
+        .accent {
+            color: red;
+        }
+        span {
+            display: inline-block;
+            /* margin: 2px 5%; */
+            padding: 2px 10px; /*2px위 3px오른쪽 4px아래 5px왼쪽*/
+            width: 100px;
+            /*인라인은 width를 주어도 변화가 없다 */
+            height: 40px;
+            box-shadow: 3px 2px 5px #0000ff;
+            /* border-style: outset;
+            border-color: green;
+            border-width: 3px; */
+            border: 3px green outset;
+            border-radius: 10px;
+            /* 값은 차례대로 넣으면 시계방향대로 값이 지정된다. */
+            /* radius는 대각선 */
+        } /*마진은 콘텐츠 영역에서 쓰이지않는다*/
+
+    </style>
+</head>
+<body>
+    <h1>시간이란</h1>
+    <div>내일 죽을 것처럼 <span class="accent">오늘</span>을 살고</div>
+    <p>영원히 살 것처럼 <br> 내일을 꿈꾸어라.</p>
+    <span>content1</span>
+    <span>content2</span>
+    <span>content3</span>
+</body>
+</html>
