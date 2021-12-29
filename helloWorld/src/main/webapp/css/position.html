@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css/position.html</title>
+    <style>
+        /* position p.282 */
+        /* fixed모드는 스크롤을 내려도 그대로 고정된다 */
+        /* sticky는 fixed와 비슷하지만 스크롤이 내려갈때 고정된다 */
+        body {
+            border: 1px solid gray;
+        }
+        p {
+            border: 1px solid gray;
+        }
+        #pos1 {
+            width: 200px;
+            position: static;
+            top: 50px;
+        }
+        #pos2 {
+            width: 230px;
+            position: sticky;
+            top: 30px;
+            left: 50px;
+        }
+        #pos3 {
+            width: 270px;
+            position: static;
+            top: 50px;
+        }
+
+        #css3 {
+            position: absolute;
+            top: -40px;
+            left: -50px;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="pos1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Minima maiores quae itaque laudantium commodi magnam corrupti eligendi quaerat sequi, necessitatibus at nobis, rerum totam d
+        olore tempore perspiciatis amet, magni iure.</p>
+    <p id="pos2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Temporibus consequuntur dolores vero animi dolorum ipsa repudiandae optio praesentium ea laboriosam ex, non o
+         mnis, aut nulla, nemo minus! Illum, sunt mollitia.</p>
+    <p id="pos3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Accusantium, ad? Dicta quis fugiat repellendus voluptatibus impedit dolorum accusamus cumque nobis, harum expedit
+         a illum, tempore iste est odit sunt non quae!</p>
+         
+         <img src="../images/image1.PNG" width="400px" alt="">
+         <span id="css3">CSS3</span>
+</body>
+
+</html>

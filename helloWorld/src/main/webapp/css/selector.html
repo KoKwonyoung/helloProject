@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* 전체선택자 */
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .content {
+            /* 클래스 선택자 */
+        }
+
+        #row {
+            /* 아이디 선택자 */
+        }
+
+        h1,
+        p {
+            /* 타입선택자 */
+        }
+
+        .theme {
+            width: 50%;
+            float: left;
+        }
+
+        .content {
+            width: 50%;
+            float: left;
+        }
+
+        div.theme ul {
+            /* >ul만 하면 테마 바로 밑에있는 ul만 해당되지만 공백ul 로 하면 테마 밑에있는 모든 ul에게 해당된다. */
+            margin-left: 50px;
+            list-style-type: square;
+        }
+
+        .content>ul {
+            list-style-type: circle;
+        }
+
+        /* p319~, p.322~ li 테그 옆에있는(동생태그) ul 찾기 순서 중요*/
+        li+ul {
+            background: burlywood;
+        }
+
+        /* +와 ~는 형제관계 >와 공백은 부모자식관계를 뜻한다.*/
+        li~ul {
+            color: red;
+        }
+
+        #signup fieldset:nth-child(1) label {
+            width: 30%;
+            float: left;
+        }
+
+        #signup fieldset:nth-child(2) label {
+            width: 40%;
+            float: left;
+        }
+        body>ul {
+            margin-left: 100px;
+        }
+        a[href$="org"] {
+            color: red;
+        }
+        /* 속성선택자 p.333 */
+        a[class^="main"] {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="main first" href="https://www.spec.whatwg.org" target="_blank">HTML</a> </li>
+        <li><a class="main second" href="https://www.w3.org" target="_blank">w3</a></li>
+        <li><a class="main second-1" href="http://www.spec.com" target="_blank">spec</a></li>
+        <li><a class="main second-2" href="https://www.spec.whatwg.org" target="_parent">org</a></li>
+        <li><a class="main" target="_blank">None</a> </li>
+    </ul>
+    <div style="height: 100px;"></div>
+    <div class="container">
+        <div class="theme">
+            <ul>
+                <ul>
+                    <li>Car</li>
+                    <li>Plane</li>
+                </ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Cherry</li>
+
+            </ul>
+        </div>
+
+        <div class="content">
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <ul>
+                    <li>Car</li>
+                    <li>Plane</li>
+                </ul>
+                <li>Cherry</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

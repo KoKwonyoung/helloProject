@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css/selector_peseudo.html</title>
+    <style>
+        /* p.339 */
+        a:link {
+            /* 링크태그는 기본적으로 언더바가 생기기에 none으로 바꾸면 없어진다 */
+            text-decoration: none;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            color: pink;
+            background-color: royalblue;
+        }
+        a:active {
+            background-color: yellow;
+            color: blue;
+        }
+        input:focus {
+            background-color: red;
+            color: white;
+        }
+        /* p.343 */
+        /* 리스트 태그중 첫번째 자식 */
+        li:first-child {
+            background-color: orangered;
+        }
+        li:last-child {
+            background-color: coral;
+            /* 밑에 다른이름의 자식이있으면 포함이 안됨 */
+        }
+        li:nth-child(3){
+            /* n번째 자식 고르기 */
+         /* 만약 그 자리에 다른 이름의 자식이 있으면 적용이 안된다.*/
+            font-size: 1.3em;
+            color: blueviolet;
+        }
+        li:nth-of-type(3){
+           font-size: 1.3em;
+           
+           background-color: cadetblue;
+        }
+        li:last-of-type(3) {
+            color: chartreuse;
+        }
+        li:nth-last-of-type(3) {
+            font-size: 1.3em;
+           background-color: rgb(107, 95, 160);
+        }
+        li:only-child {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>home</h1>
+    <nav class="navi">
+        <ul>
+            <li><a href="#">이용 안내</a></li>
+            <li><a href="#navi">객실 소개</a></li>
+            <h3>손님예약하기</h3>
+            <li><a href="#">예약 방법 및 요금</a></li>
+            <li><a href="#">예약 하기</a></li>
+            <input type="text" name="" id="" placeholder="가상선택자">
+        </ul>
+    </nav>
+    <div style="height: 80px;"></div>
+    <nav id="navi">
+        <ul>
+            <li>2인실</li>
+            <li>3인실</li>
+            <li>4인실</li>
+            <li>가족실</li>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li>기타</li>
+            <li>기타2</li>
+        </ul>
+    </nav>
+    <div style="height: 800px;"></div>
+</body>
+
+</html>
