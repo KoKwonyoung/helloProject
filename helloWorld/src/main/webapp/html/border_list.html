@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html/border_list.html</title>
+    <style>
+        * {
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .topview {
+            background-color: black;
+            border-left-style: solid; 
+            border-left-width: 1px;
+            margin: 20px auto;
+            padding: 0;
+            float: left;
+            width: 100%;
+            height: 40px;
+        }
+
+        .topview .upv {
+            color: whitesmoke;
+            display: inline-block;
+            
+            
+            
+        }
+        .topview .upv:nth-child(2), 
+        .upv:nth-child(3),
+        .upv:nth-child(4){
+            float: right;
+        }
+        .topview .upv:nth-child(2){
+            width: 10%;
+            color: gray;
+            margin-top: 10px;
+        }
+        .topview .upv:nth-child(3){
+            width: 10%;
+            color: gray;
+            margin-top: 10px;
+        }
+        .topview .upv:nth-child(4){
+            width: 10%;
+            margin-top: 10px;
+        }
+        .topview .upv:nth-child(1) {
+            font-size: 1.4em;
+            margin-right: 10%;
+            margin-top: 5px;
+        }
+        .sideview {
+            float: left;
+            width: 25%;
+        }
+        .mainview {
+            float: left;
+            width: 75%;
+        }
+        .up {
+            list-style-type: none;
+           }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .up li{
+            display: inline-block;
+            padding: 6px;
+
+        }
+        .up li:nth-child(1) {
+            width: 48%;
+        }
+        .up li:nth-child(2),.up li:nth-child(4) {
+            width: 15%;
+        }
+        .up li:nth-child(3) {
+            width: 20%;
+        }
+        .mainsi {
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .title:nth-child(4) {
+            text-align: center;
+        }
+        
+        .ot:nth-child(4) {
+            text-align: center;
+        }
+        .list {
+            border-top:1px solid gray;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="topview">
+        <div class="upv">Codevang's Page</div>
+        <div class="upv">회원정보</div>
+        <div class="upv">로그아웃</div>
+        <div class="upv">홈</div>
+    </div>
+    <div class="sideview">
+        <div class="mainsi">Category</div>
+        <div class="si">게시판</div>
+        <div class="si">일반 게시판</div>
+        <div class="si">코딩 게시판</div>
+    </div>
+    <div class="brd">
+    <div class="mainview">
+        <div class="matop">
+            <ul class="up">
+                <li class="title">제목</li>
+                <li class="title">글쓴이</li>
+                <li class="title">작성일</li>
+                <li class="title">조회수</li>
+            </ul>
+        </div>
+        <div class="list">
+            <ul class="up">
+                <li class="ot">안녕하세요</li>
+                <li class="ot">codevang</li>
+                <li class="ot">2020/03/02</li>
+                <li class="ot">1</li>
+            </ul>
+            
+        </div>
+        <div class="list">
+            <ul class="up">
+                <li class="ot">ㅇㅇㅇ</li>
+                <li class="ot">codevang</li>
+                <li class="ot">2020/03/02</li>
+                <li class="ot">1</li>
+            </ul>
+        </div>
+        <div class="list">
+            <ul class="up">
+                <li class="ot">이제 되겠지!</li>
+                <li class="ot">codevang</li>
+                <li class="ot">2020/03/02</li>
+                <li class="ot">1</li>
+            </ul>
+        </div>
+        <div class="list">
+            <ul class="up">
+                <li class="ot">└re: 답글을 써보자!</li>
+                <li class="ot">codevang</li>
+                <li class="ot">2020/03/02</li>
+                <li class="ot">3</li>
+            </ul>
+        </div>       
+        <button class="sButton">1</button>
+        <button class="sButton">2</button>
+        <button class="sButton">3</button>
+        <button class="maButton">새글쓰기</button>
+    </div>
+</div>
+</body>
+
+</html>

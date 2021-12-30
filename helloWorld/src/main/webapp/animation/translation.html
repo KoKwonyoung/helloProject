@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css/translation.html</title>
+    <style>
+        #container {
+            width: 800px;
+            height: 200px;
+            margin: 20px auto;
+        }
+        .origin {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+        }
+        .origin>div{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            /* 어떠한 변형과 상관없이 변형에 딜레이를 거는 명령어 */
+            transition: all 3s;
+        }
+        /* p.357 */
+        #movex:hover {
+            /* :hover 상태명령어 - 마우스가 올라가면 변형한다. */
+            /* x축으로 움직이는 명령어 */
+            /* transform: translateX(50px); */
+            /* 크기가 변형하는 명령어 */
+            /* transform: scale(1.5); */
+            /* 각도를 회전시키는 명령어 */
+            transform: scale(1.4) rotate3d(2.5, 1.2, -1.5, 55deg);
+            /* 각도를 비틀어버리는 명령어 */
+            /* transform: skewy(30deg); */
+            /* transform: rotatex(30deg);
+            transform: rotatey(20deg); */
+            /* transform: rotatez(45deg); */
+            
+        }
+        #movey:hover {
+            /* transform: translateY(50px); */
+            transform: scaleY(.7);
+        }
+        #movexy:hover {
+            /* transform: translate(50px, 50px); */
+            transform: scale(1.5, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <!-- 축을 기준으로 기울이는 명령어 perspective -->
+        <div class="origin">
+            <div id="movex"><img style="width: 100px; height: 100px;" src="../images/rotate.PNG" alt="">
+
+            </div>
+        </div>
+        <div class="origin">
+            <div id="movey">
+                
+            </div>
+        </div>
+        <div class="origin">
+            <div id="movexy">
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

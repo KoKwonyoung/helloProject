@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css/grid1.html</title>
+    <style>
+        #wrapper {
+            display: grid;
+            /* grid-template-columns 픽셀 지정 할때마다 1컬럼씩 추가  */
+            grid-template-columns: minmax(200px, auto) 200px 200px;
+            grid-template-rows: minmax(150px, auto) minmax(150px, auto) 150px 150px;
+        }
+        .items {
+            padding: 10px;
+            background-color: yellowgreen;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iure, repudiandae
+            aspernatur, quos, suscipit ipsum ad exercitationem sequi aliquam molestiae nostrum ab quaerat minus debitis
+            ut quod facilis est fugit?</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="items"> Consectetur iure, repudiandae
+            aspernatur, quos,</div>
+        <div class="items">uscipit ipsum ad exercitationem sequi aliquam molestiae nostrum</div>
+        <div class="items">ab quaerat minus debitis
+            ut quod facilis est fugit?</div>
+    </div>
+</body>
+
+</html>
