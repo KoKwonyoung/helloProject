@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #Mhead {
+            margin: 20px auto;
+            padding: 0;
+            float: left;
+            width: 100%;
+            height: 70px;
+            margin-right: 5%;
+            border-top: 1px solid rgb(192, 190, 190);
+            border-bottom: 1px solid rgb(192, 190, 190);
+            
+        }
+        .head {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bolder;
+            display: inline-block;
+            margin: 1% auto;
+            margin-right: 5%;
+           }
+        .Tside {
+            width: 60%;
+            float: left;
+            font-weight: bold;
+            font-size: larger;
+            border-bottom:1px solid gray;
+            border-width: 100%;
+            
+            
+        }
+        .side {
+            font-weight: bold;
+            font-size: 14px;
+            float: left;
+            width: 60%;
+            margin-left: 0px;
+            margin-right: 15%;
+            margin-bottom: 1%;
+            margin-top: 0;
+            padding-left: 0px;
+            padding-right: 60px;
+            padding-top: 6%;
+            padding-bottom: 3%;
+            border-bottom:1px solid gray;
+            border-width: 100%;
+            
+        }
+        .side:nth-child(7) {
+            background-color: rgb(62, 184, 184);
+        }
+        nav {
+            
+            float: left;
+            width: 20%;
+            height: 30%;
+            margin: 0%;
+            text-align: left;
+            padding: 0;
+        }
+        th {
+            float: left;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h1 {
+            border-bottom: 1px solid gray;
+            width: 1241px;
+            float: right;
+        }
+        .op {
+            font-size: 8px;
+            width: 20%;
+            height: 20px;
+            float: right;
+            margin-right: 6%;
+        }
+       
+        #A {
+            display: inline-block;
+            border-bottom: 1px solid gray;  
+            width: 70%;
+        }
+        .list {
+            display: inline-block;
+            border-collapse: collapse;
+        }
+        .list:nth-child(4) {
+            width: 15%;
+        }
+        
+        
+        main > div  li:nth-child(1) {
+            width: 10%;
+            float: left;
+            text-align: center;
+        }
+        main > div  li:nth-child(2) {
+           width: 32%;
+           text-align: left;
+        }
+        main > div  li:nth-child(3) {
+            
+           width: 10%;
+           text-align: center;
+        }
+        main > div  li:nth-child(4) {
+            width: 8%;
+            text-align: center;
+        }
+        main > div  li:nth-child(5) {
+            width: 8%;
+            text-align: center;
+        }
+         .wr{
+             font-size: 13px;
+            display: inline-block;
+            border-bottom: 1px solid gray;
+            margin-bottom: 1px;
+            padding-bottom: 2px;
+            
+        }
+        .wr:nth-child(1) {
+            width: 11.5%;
+        }
+        .wr:nth-child(2) {
+            width: 30%;
+            padding-left: 10;
+        }
+        .bt {
+            float: right;
+            margin-right: 13%;
+            
+        }
+        button {
+            border-style: none;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <div id="Mhead">
+           <ul>
+                <li class="head">감염병</li>
+                <li class="head">건강정보</li>
+                <li class="head">정책정보</li>
+                <li class="head">연구개발</li>
+                <li class="head">알림·자료</li>
+                <li class="head">간행물·통계</li>
+                <li class="head">민원·정보공개</li>
+                <li class="head">기관소개</li>
+                <li class="head">사업별 누리집</li>
+            </ul> 
+        </div>
+    </header>
+    <nav>
+        <div id="Aside">
+            <ul>
+                <li class="Tside">알림·자료</li>
+                <li class="side">이달의건강소식 ∨</li>
+                <li class="side">보도자료 ∨</li>
+                <li class="side">포토뉴스 ∨</li>
+                <li class="side">홍보자료 ∨</li>
+                <li class="side">공지사항 ∨</li>
+                <li class="side">공고/공시 ∧</li>
+                <li class="side">채용공고 ∨</li>
+                <li class="side">법령·지침·서식 ∨</li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h1 style="font-size: 20px;">공고/공시<div class="op">홈 > 알림·자료 > 공고/공시</div></h1>
+        
+        <div class="line" style="font-size: 13px;">전체 3,320건, 현재 페이지 2/332</div>
+        <div class="bt">
+            <select name="제목">
+                <option id="slc" selected>제목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+            </select>
+            <input type="text" placeholder="검색어를 입력하세요">
+            <button>검색</button>
+        </div>
+    <div id="allList">   
+        <div id="A">
+            <ul>
+                <li class="list">번호</li>
+                <li class="list">제목</li>
+                <li class="list">작성자</li>
+                <li class="list">작성일자</li>
+                <li class="list">조회수</li>
+            </ul>
+        </div>
+        <div id="B">
+            <ul>
+                <li class="wr">3310</li>
+                <li class="wr">[건강정보 개발 및 국가건강정보포털 운영]</li>
+                <li class="wr">만성질환예방과</li>
+                <li class="wr">2021-12-28</li>
+                <li class="wr">137</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="wr">3309</li>
+                <li class="wr">국제공인예방접종지정기관 지정 공고</li>
+                <li class="wr">질병관리청 검역정책과</li>
+                <li class="wr">2021-12-23</li>
+                <li class="wr">305</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="wr">3308</li>
+                <li class="wr">2022년 환전외국환은행 선정결과 공고</li>
+                <li class="wr">백신계약팀</li>
+                <li class="wr">2021-12-23</li>
+                <li class="wr">184</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="wr">3307</li>
+                <li class="wr">2021년 질병관리청 정책연구용역(강원도 홍천군과 횡성군...</li>
+                <li class="wr">운영지원과</li>
+                <li class="wr">2021-12-20</li>
+                <li class="wr">378</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="wr">3306</li>
+                <li class="wr">2021년 질병관리청 정책연구용역(국민건강영양조사 원시자...</li>
+                <li class="wr">운영지원과</li>
+                <li class="wr">2021-12-17</li>
+                <li class="wr">432</li>
+            </ul>
+        </div>
+    </div> 
+    </main>
+
+</body>
+</html>
