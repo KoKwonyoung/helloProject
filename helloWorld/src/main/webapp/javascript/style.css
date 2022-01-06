@@ -1,0 +1,64 @@
+
+        * {
+            box-sizing: border-box;
+
+        }
+
+        #tbl>thead>tr {
+            background-color: rgb(104, 188, 228);
+        }
+
+        #tbl>tbody>tr:nth-child(2n) {
+            background-color: rgb(226, 226, 97);
+        }
+
+        #tbl>tbody>tr:nth-child(2n+1) {
+            background-color: rgb(221, 117, 204);
+        }
+
+        /* table,
+        td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            display: inline-block;
+            margin: 3px;
+        }
+
+        td {
+            padding: 5px;
+            font-size: 0.9em;
+
+        } */
+
+        span:not(:empty) { /*값이 있는*/
+            display: inline-block;
+            border: 1px solid gray;
+            padding: 3px;
+            margin: 5px;
+            width: 60px;
+            height: 40px;
+            padding-top: 10px;
+            text-align: center;
+            
+        }
+
+        span:empty { /*값이 없는*/
+            display: inline-block;
+            padding: 3px;
+            margin: 5px;
+            width: 60px;
+            
+        }
+        table > span:nth-child(2) {
+            background-color: yellow;
+           
+        }
+
+        .sunday {
+            background-color: red;
+            color: white;
+        }
+        .saturday {
+            background-color: skyblue;
+            color: white;
+        }
