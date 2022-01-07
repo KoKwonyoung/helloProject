@@ -14,23 +14,97 @@
     </script> -->
     <!-- <script src="calendar.js"></script> -->
     <style>
-        div:not(#show) {
-            display: inline-block;
-            width: 100px;
-            height: 100px;
-            background-color: yellow;
-            color: yellow;
+        #add {
             border: 1px solid gray;
-            font-size: 30px;
+            width: 65%;
+            float: left;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .row {
+            margin: 5px 10px;
+        }
+        .row>label {
+            display: inline-block;
+            width: 12%;
+        }
+        .row>input {
+            display: inline-block;
+            width: 80%;
+        }
+
+        #btn {
+            /* border: 1px solid gray; */
+            margin: 5px;
+            float: left;
+            width: 30%;
+            height: 140px;
+        }
+
+        #btn>button {
+            margin-top: 50px;
+            width: 120px;
+        }
+
+        #list {
+            float: left;
+            border: 1px solid gray;
+            width: 82%;
+            height: 400px;
+            /* padding-left: 150px; */
+            /* margin-left: 100px; */
+        }
+        #list table{
+            width: 97%;
+            margin: 10px auto;
+        }
+
+        th,td {
+            padding:3px 5px;
             text-align: center;
-            line-height: 100px;
-            /*문자열 위치 조절*/
         }
     </style>
+    <!-- div:not(#show) {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        color: yellow;
+        border: 1px solid gray;
+        font-size: 30px;
+        text-align: center;
+        line-height: 100px;
+        /*문자열 위치 조절*/
+    } -->
 </head>
 
-<body>
-    <div id="show"></div>
+<body id="bdy">
+    <div id="show1">
+        <div id="add">
+            <div class="row">
+                <label for="">이름</label>
+                <input type="text" name="name">
+            </div>
+            <div class="row">
+                <label for="">연락처</label>
+                <input type="text" name="phone">
+            </div>
+            <div class="row">
+                <label for="">주소</label>
+                <input type="text" name="addr">
+            </div>
+            <div class="row">
+                <label for="">이메일</label>
+                <input type="text" name="email">
+            </div>
+        </div>
+        <div id="btn">
+            <button>등록</button>
+            <button>선택삭제</button>
+        </div>
+        <div id="list"></div>
+    </div>
     <!-- <ul>
         <li>23</li>
         <li>17</li>
@@ -50,17 +124,19 @@
         <li>1002 - 홍길동 - 85</li>
         <li>1003 - 류현진 - 90</li>
     </ul> -->
-    <input type="text" id="name1"><button id="delBtn">조회삭제</button>
+    <!-- <input type="text" id="name1">
+    <button id="delBtn">조회삭제</button>
+    <button id="addBtn">추가</button> -->
     <!-- button : element, id: attribute, textnode -->
-    <p>helo</p> <!-- 끝에 p태그를 안붙여도 웹페이지에서 알아서 붙여준다-->
-    <ul>
+    <!-- <p>helo</p> 끝에 p태그를 안붙여도 웹페이지에서 알아서 붙여준다 -->
+    <!-- <ul id="nameList"> 
         <li>김은서</li>
         <li>황보경</li>
         <li>고권영</li>
         <li>류기태</li>
         <li>구자현</li>
-    </ul>
-    <script src="dom1.js"></script>
+    </ul> -->
+    <script src="dom5.js"></script>
 
     <script>
         // document.querySelector('h3').innerHTML = 'Nice, World';
