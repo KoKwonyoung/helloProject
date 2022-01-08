@@ -133,7 +133,7 @@ function delCallback() {
 // 리스트 -> 입력화면에 보여주기
 
 
-let names = document.querySelectorAll('table tbody tr td:nth-child(2)'); //컬럼 누르는 장소지정
+let names = document.querySelectorAll('table tbody tr td'); //컬럼 누르는 장소지정
 for (let i = 0; i < names.length; i++) {
     names[i].addEventListener('click', callInfo);
 }
@@ -143,45 +143,10 @@ function callInfo() {
     // console.log(parent.childNodes[2].innerText);
     document.querySelector('input[name="name"]').value
      = parent.childNodes[1].innerText; // 인풋의 몇번째 공간에 들어가는지
-    
+     document.querySelector('input[name="phone"]').value
+     = parent.childNodes[2].innerText;
+     document.querySelector('input[name="addr"]').value
+     = parent.childNodes[3].innerText;
+     document.querySelector('input[name="email"]').value
+     = parent.childNodes[4].innerText;
 }
-
-// names = document.querySelectorAll('table tbody tr td:nth-child(3)'); //컬럼 누르는 장소지정
-// for (let i = 0; i < names.length; i++) {
-//     names[i].addEventListener('click', callInfo);
-// }
-// function callInfo() {
-//     //this 이벤트를 받는 대상(td)
-//     let parent = this.parentNode;
-//     // console.log(parent.childNodes[2].innerText);
-//     document.querySelector('input[name="phone"]').value
-//      = parent.childNodes[2].innerText; // 인풋의 몇번째 공간에 들어가는지
-    
-// }
-
-// names = document.querySelectorAll('table tbody tr td:nth-child(4)'); //컬럼 누르는 장소지정
-// for (let i = 0; i < names.length; i++) {
-//     names[i].addEventListener('click', callInfo);
-// }
-// function callInfo() {
-//     //this 이벤트를 받는 대상(td)
-//     let parent = this.parentNode;
-//     // console.log(parent.childNodes[2].innerText);
-//     document.querySelector('input[name="addr"]').value
-//      = parent.childNodes[3].innerText; // 인풋의 몇번째 공간에 들어가는지
-    
-// }
-
-// names = document.querySelectorAll('table tbody tr td:nth-child(5)'); //컬럼 누르는 장소지정
-// for (let i = 0; i < names.length; i++) {
-//     names[i].addEventListener('click', callInfo);
-// }
-// function callInfo() {
-//     //this 이벤트를 받는 대상(td)
-//     let parent = this.parentNode;
-//     // console.log(parent.childNodes[2].innerText);
-//     document.querySelector('input[name="email"]').value
-//      = parent.childNodes[4].innerText; // 인풋의 몇번째 공간에 들어가는지
-    
-// }
-
