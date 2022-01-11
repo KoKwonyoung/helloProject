@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #add {
+            border: 1px solid gray;
+            width: 65%;
+            float: left;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .row {
+            margin: 5px 10px;
+        }
+
+        .row>label {
+            display: inline-block;
+            width: 12%;
+            background-color: rgb(201, 201, 201);
+            text-align: center;
+        }
+
+        .row>input {
+            display: inline-block;
+            width: 80%;
+        }
+
+        #btn {
+            /* border: 1px solid gray; */
+            margin: 5px;
+            float: left;
+            width: 13%;
+            height: 120px;
+        }
+
+        #btn>button {
+            margin-top: 40px;
+            width: 120px;
+        }
+
+        #list {
+            float: left;
+            border: 1px solid gray;
+            width: 78%;
+            height: 400px;
+            /* padding-left: 150px; */
+            /* margin-left: 100px; */
+        }
+
+        #list table {
+            width: 97%;
+            margin: 10px auto;
+            border-style: none;
+            border-collapse: collapse;
+            
+        }
+        th {
+            background-color: gray;
+            color: white;
+        }
+
+        th,
+        td {
+            /* display: inline-block; */
+            width: 12%;
+            padding: 3px 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body id="bdy">
+
+    <div id="show">
+        <div id="add">
+            <div class="row">
+                <label for="">도서코드</label>
+                <input type="text" name="bookCd">
+            </div>
+            <div class="row">
+                <label for="">도서명</label>
+                <input type="text" name="bookNm">
+            </div>
+            <div class="row">
+                <label for="">저자</label>
+                <input type="text" name="bookWt">
+            </div>
+            <div class="row">
+                <label for="">출판사</label>
+                <input type="text" name="bookCp">
+            </div>
+            <div class="row">
+                <label for="">가격</label>
+                <input type="text" name="bookPr">
+            </div>
+            <!-- <div class="row">
+                <label for="">삭제</label>
+                <input type="text" name="delete">
+            </div> -->
+        </div>
+        <div id="btn">
+            <button>저장</button>
+            <button>선택삭제</button>
+        </div>
+        <div id="list"></div>
+    </div>
+    <script src="example.js"></script>
+</body>
+
+</html>
